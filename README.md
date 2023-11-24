@@ -15,28 +15,47 @@ This project involves the development of a machine learning model to detect acci
 9. [Issues and Limitations](#issues-and-limitations)
 
 ## Introduction
-Explain the purpose of your project and provide a brief overview of how the accident detection model works. Include any relevant background information or motivation for creating the model.
+Accident Detection using Gyrometer and Accelerometer with Random Forest is a machine learning project aimed at identifying potential accidents by analyzing posture variations captured through gyrometer and accelerometer data. The project employs a Random Forest classifier, leveraging a robust algorithm for effective accident detection. The emphasis on a 6-second window ensures timely processing of sensor data, making it a reliable solution for real-time applications.
 
 ## Features
-Outline the key features of your machine learning model. This could include the types of sensors used, data preprocessing steps, and the algorithms employed for accident detection.
+1. **Gyrometer and Accelerometer Data Analysis:**
+   - Utilizes gyrometer and accelerometer data to analyze the posture of individuals.
+
+2. **Random Forest Machine Learning Model:**
+   - Implements a Random Forest classifier for accident detection.
+
+3. **Six-Second Window Processing:**
+   - Operates on 6-second windows of sensor data for efficient and timely accident detection.
+
+4. **Data Preprocessing with StandardScaler:**
+   - Standardizes sensor data using `StandardScaler` from scikit-learn for improved model performance.
+
+5. **Hyperparameter Tuning with RandomizedSearchCV:**
+   - Fine-tunes the Random Forest model through hyperparameter tuning using `RandomizedSearchCV`.
+
+6. **Model Evaluation and Accuracy Measurement:**
+   - Evaluates the performance of the trained model on a test set and provides accuracy metrics.
+
+7. **Model Saving and Loading with joblib:**
+   - Saves the best-performing model using `joblib` for future use and loads it for making predictions.
+
+8. **User-Friendly Input Interface:**
+   - Offers a straightforward interface for users to input data and receive accident detection predictions.
+
 
 ## Requirements
 List the software and hardware requirements needed to run your project. Include any dependencies that users should install.
 
 ## Installation
-Provide step-by-step instructions for installing and setting up your project. This may include installing libraries, setting up a virtual environment, or configuring any external components.
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/accident-detection.git
+   ```
 
-## Usage
-Explain how users can use your model for accident detection. Include example code snippets or scripts to demonstrate the usage.
+   ```bash
+     cd accident-detection
+   ```
 
-## Training the Model
-If applicable, provide information on how users can train the model with their own data. Include details on the dataset format, training parameters, and any other relevant information.
-
-## Testing
-Explain how users can test the model's performance. Provide sample test data or instructions on how users can evaluate the model on their own datasets.
-
-## Results
-Present the results of your model's performance. Include any metrics, graphs, or visualizations that demonstrate the effectiveness of your accident detection model.
-
-## Issues and Limitations
-Highlight any known issues or limitations of your model. This could include areas where the model may not perform well or situations where improvements can be made.
+2. Install requirements
+   ```bash
+   pip3 install -r requirements.txt
